@@ -6,10 +6,24 @@
     <title>To Do List</title>
 </head>
 <body>
-    <div>
-        <button>Toggle Mode</button>
-
-        <form action="">
+    <div id="app">
+        <button id="toggleMode">Toggle Mode</button>
+        <hr />
+        <form id="taskForm">
+            <fieldset id="todoSet">
+                <legend>Todo:</legend>
+                <label for="todoDescription">Description:</label>
+                <input type="text" name="todoDescription" required />
+                <button type="submit">Submit</button>
+            </fieldset>
+            <fieldset id="reminderSet" style="display: none;" disabled>
+                <legend>Reminder:</legend>
+                <label for="reminderDescription">Description:</label>
+                <input type="text" name="reminderDescription" required />
+                <label for="scheduleDate">Date:</label>
+                <input type="date" name="scheduleDate" required />
+                <button type="submit">Submit</button>
+            </fieldset>
             <fieldset>
                 <select name="notification">
                     <option value="SMS">SMS</option>
