@@ -1,0 +1,1 @@
+alert('Iniciando projeto Typescript! :D')
